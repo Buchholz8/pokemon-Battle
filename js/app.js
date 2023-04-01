@@ -69,15 +69,5 @@ let pokemon = [
             ]
     },
 ]
-let Moves_n = pokemon.Moves.Move_name
-for(let i = 0; i < pokemon.length ; i++){
-    document.body.insertAdjacentHTML(`beforeend` , `<div class="prod_div>
-    <img src="${pokemon[i][`Sprite`]}</img>
-    <h1>${pokemon[i][`Hp`]}</h1>
-    <h2>${pokemon[i][`Name`]}</h2>
-    <p>${pokemon[i][`Moves_n`]}</p>
-    <p>${pokemon[i].Moves}</p>
-    <button class="Play_button" id="${pokemon[i][`Name`]}"> Play As</button>
-    </div>
-    `);
-}
+
+play_button.addEventListener(`click` , `/pages/Battle.html`)
