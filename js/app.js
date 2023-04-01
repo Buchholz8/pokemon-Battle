@@ -69,5 +69,24 @@ let pokemon = [
             ]
     },
 ]
+function Choices(details){
+    let pick_1 = undefined;
+    for(let i = 0 ; i <pokemon.length; i++){
+        if(pokemon[i][`Name`] === details[`target`].getAttribute(`pk_name`) ){
+            pick_1 = pokemon[i]
+        }
+    }
+    let ai = pokemon[2]
+    let player_poke_json = JSON.stringify(pick_1)
+    let ai_player_jsno = JSON.stringify(ai)
+    Cookies.set(`player_health` , player_1[`M_health`]);
+    Cookies.set(`ai_health` , ai[`M_health`]);
+    Cookies.set(`player_select` , player_poke_json);
+    Cookies.set(`Computer` , ai_player_jsno);
+    location.href= `pages/Battle.html`
+}
 
-play_button.addEventListener(`click` , `/pages/Battle.html`)
+let pick_button = document.querySelectorAll(`.play_as_button`)
+for(let i=0; i < pick_button.length ; i++){
+    pick_button[i].addEventListener(`click` , Choices)
+}
