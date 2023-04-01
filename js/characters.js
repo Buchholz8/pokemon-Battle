@@ -2,7 +2,7 @@ let pokemon = [
     {
         Name:`Poliwrath`,
         Sprite:"/images/062.png",
-        Hp:0,
+        Hp:150,
         Moves: [
             {
                Move_name:`Split Spiral Punch`,

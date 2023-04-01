@@ -36,14 +36,18 @@ arena.insertAdjacentHTML(`afterbegin` , `<p> Error in picking </p>`)
 `))
 }
 
-let ai_hp = document.getElementById(`ai_hp`)
-let player_hp = document.getElementById(`player_hp`)
-function winner(details){
-if(player_hp <= 0){
-    player_hp.innerHTML[`target`] = `<h4 id="player_hp"> Game Over </h4>`
-} if(ai_hp <= 0){
-    player_hp.innerHTML[`target`] = `<h4 id="player_hp"> Winner </h4>`
+function Attacks(details){
+    for(let i = 0 ; i < player_pick[`moves`].length; i++){
+        player_pick[`moves`][i][`Move_Power`] - ai_pick[`Hp`]
+    }
 }
+let attack_button = document.querySelectorAll(`.move_button`)
+for(let i=0 ; i < attack_button.length ; i++){
+    attack_button[i].addEventListener(`click` , Attacks)
 }
+
+
+
+
 
     
