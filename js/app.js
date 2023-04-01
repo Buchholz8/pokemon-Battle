@@ -72,15 +72,15 @@ let pokemon = [
 function Choices(details){
     let pick_1 = undefined;
     for(let i = 0 ; i <pokemon.length; i++){
-        if(pokemon[i][`Name`] === details[`target`].getAttribute(`pk_name`) ){
+        if(pokemon[i][`Name`] === details[`target`].getAttribute(`p_name`) ){
             pick_1 = pokemon[i]
         }
     }
-    let ai = pokemon[2]
+    let ai = pokemon[0]
     let player_poke_json = JSON.stringify(pick_1)
     let ai_player_jsno = JSON.stringify(ai)
-    Cookies.set(`player_health` , player_1[`M_health`]);
-    Cookies.set(`ai_health` , ai[`M_health`]);
+    Cookies.set(`player_health` , pick_1);
+    Cookies.set(`ai_health` , ai);
     Cookies.set(`player_select` , player_poke_json);
     Cookies.set(`Computer` , ai_player_jsno);
     location.href= `pages/Battle.html`
