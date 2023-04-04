@@ -32,6 +32,9 @@ section{
 .move_button{
     display: grid;
     place-items: center;
-    width:150px;
-    height:100px;
+    width: 80px;
+}
+#fight_container{
+    display: grid;
+    max-width: 380px;
 }
