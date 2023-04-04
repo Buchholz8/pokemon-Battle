@@ -37,10 +37,10 @@ else {
         <h4 id="player_hp">${player_pick[`Hp`]}</h4>
         <p>${player_pick[`Name`]}</p>
         <div id="moves">
-        <button class="move_button">${player_pick[`Moves`][0][`Move_name`]}</button>
-        <button class="move_button">${player_pick[`Moves`][1][`Move_name`]}</button>
-        <button class="move_button">${player_pick[`Moves`][2][`Move_name`]}</button>
-        <button class="move_button">${player_pick[`Moves`][3][`Move_name`]}</button>
+        <button class="move_button">${player_pick[`Moves`][0][`Move_name`]}:${player_pick[`Moves`][0][`Move_Power`]} power</button>
+        <button class="move_button">${player_pick[`Moves`][1][`Move_name`]}:${player_pick[`Moves`][1][`Move_Power`]} power</button>
+        <button class="move_button">${player_pick[`Moves`][2][`Move_name`]}:${player_pick[`Moves`][2][`Move_Power`]} power</button>
+        <button class="move_button">${player_pick[`Moves`][3][`Move_name`]}:${player_pick[`Moves`][3][`Move_Power`]} power</button>
         </div>
     </div>
 `))

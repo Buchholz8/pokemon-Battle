@@ -25,10 +25,21 @@ section {
 
 #player_battle {
   display: grid;
+  place-items: center;
+}
+#player_battle > h4 {
+  padding-right: 12px;
 }
 #player_battle > #moves {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.move_button {
+  display: grid;
+  place-items: center;
+  width: 150px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
