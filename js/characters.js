@@ -7,7 +7,7 @@ let pokemon = [
         Moves: [
             {
                Move_name:`Split Spiral Punch`,
-               Move_power:20, 
+               Move_Power:20, 
             },
             {
                 Move_name:`Wake-up Slap`,

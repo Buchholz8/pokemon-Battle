@@ -7,7 +7,10 @@ function Choices(details){
         }
     }
     //i define the values and set cookies to remeber those values
-    let ai = pokemon[0]
+    //here i use the math function to select a random number , i then set that random number to a variable and make that the number of pokemon the ai will choose
+    let random_number = Math.floor(Math.random() * 3)
+    let n = random_number
+    let ai = pokemon[n]
     let player_poke_json = JSON.stringify(player1)
     let ai_player_jsno = JSON.stringify(ai)
     Cookies.set(`player_health` , player1[`Hp`]);
