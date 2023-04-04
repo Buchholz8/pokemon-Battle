@@ -1,3 +1,4 @@
+//this is a js sheet that just has the pokemon and its sub values and arrays
 let pokemon = [
     {
         Name:`Poliwrath`,
@@ -6,19 +7,19 @@ let pokemon = [
         Moves: [
             {
                Move_name:`Split Spiral Punch`,
-               Move_power:70, 
+               Move_power:20, 
             },
             {
                 Move_name:`Wake-up Slap`,
-                Move_Power:70, 
+                Move_Power:40, 
              },
              {
                 Move_name:`Steamroll`,
-                Move_Power:70, 
+                Move_Power:5, 
              },
              {
                 Move_name:`Mega Throw`,
-                Move_Power:70, 
+                Move_Power:30, 
              },
             ]
     },
@@ -29,19 +30,19 @@ let pokemon = [
         Moves:[
             {
                Move_name:`Hack Off`,
-               Move_Power:70, 
+               Move_Power:60, 
             },
             {
                 Move_name:`Gaurd Claw`,
-                Move_Power:70, 
+                Move_Power:10, 
              },
              {
                 Move_name:`Steel Wing`,
-                Move_Power:70, 
+                Move_Power:30, 
              },
              {
                 Move_name:`Danger Perception`,
-                Move_Power:70, 
+                Move_Power:5, 
              },
             ]
     },
@@ -52,19 +53,19 @@ let pokemon = [
         Moves:[
             {
                Move_name:`Giga Impact`,
-               Move_Power:70, 
+               Move_Power:60, 
             },
             {
                 Move_name:`Dragon Claw`,
-                Move_Power:70, 
+                Move_Power:40, 
              },
              {
                 Move_name:`Dragon Gate`,
-                Move_Power:70, 
+                Move_Power:10, 
              },
              {
                 Move_name:`Wrapped Wing`,
-                Move_Power:70, 
+                Move_Power:5, 
              },
             ]
     },
